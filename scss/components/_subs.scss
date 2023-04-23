@@ -1,0 +1,117 @@
+.subs {
+    padding: 100px 0;
+    box-sizing: border-box;
+    position: relative;
+    // .subs__body
+    background-image: url(/assets/imgs/last1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    // .subs__text
+
+    &__text {
+        margin-right: 30px;
+        width: 50%;
+        h4 {
+            display: block;
+            margin: 0;
+            font-family: $font2;
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 1.3;
+            color: #fff;
+        }
+    }
+
+    // .subs__form
+
+    &__form {
+        width: 50%;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            label {
+                width: calc(50% - 30px);
+                margin: 0 15px;
+                input {
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 13px 20px;
+                    font-family: $font1;
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: $text;
+                    border-radius: 5px;
+                }
+            }
+            .action {
+                padding: 0 15px;
+                margin-top: 15px;
+                box-sizing: border-box;
+                max-width: 200px;
+                width: 100%;
+                .main-btn {
+                   width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .subs {
+        padding: 60px 0;
+        &__text {
+            h4 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .subs {
+        &__body {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__text {
+            width: 100%;
+            margin: 0 0 30px;
+            h4 {
+                font-size: 28px;
+            }
+        }
+        &__form {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media(max-width:560px) {
+    .subs {
+        &__form {
+            form {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                label {
+                    width: 100%;
+                    margin: 0 0 15px;
+                }
+                .action {
+                    max-width: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

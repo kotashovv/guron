@@ -1,0 +1,73 @@
+.cut {
+    box-sizing: border-box;
+    padding: 60px 0;
+    background-image: url(/assets/imgs/cut-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -60px;
+
+    // .cut__body
+
+    &__body {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    // .cut__item
+
+    &__item {
+        width: calc(16.66% - 20px);
+        margin: 0 10px 20px;
+        span {
+            display: block;
+            &.title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 1.2;
+                margin-bottom: 10px;
+                color: $red;
+            }
+            &.span {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.3;
+                display: block;
+                color: $text;
+            }
+        }
+
+    }
+}
+
+@media(max-width:1024px) {
+    .cut {
+        padding: 40px 0;
+        &__item {
+            width: calc(33.33% - 20px);
+        }
+    }
+}
+@media(max-width:768px) {
+    .cut {
+        margin-top: -20px;
+        &__item {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+@media(max-width:460px) {
+    .cut {
+        &__body {
+            margin: 0;
+        }
+        &__item {
+            margin: 0 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}

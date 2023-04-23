@@ -11,14 +11,39 @@ document.addEventListener('DOMContentLoaded', ()=>{
     
 
     const breakerSlider = new Swiper('.breaker-slider__slider', {
-        slidesPerView: 6,
         loop: false,
         speed: 500,
         spaceBetween: 20,
         navigation: {
             prevEl: '.prev-slide',
             nextEl: '.next-slide',
-        }
+        },
+		breakpoints: {
+			0: {
+				slidesPerView: 1, 
+				centeredSlide: true,
+			},
+			560: {
+				slidesPerView: 2,
+				centeredSlide: false,
+			},
+			560: {
+				slidesPerView: 3,
+				centeredSlide: false,
+			},
+			920: {
+				slidesPerView: 4,
+				centeredSlide: false,
+			},
+			1024: {
+				slidesPerView: 5,
+				centeredSlide: false,
+			},
+			1200: {
+				slidesPerView: 6,
+				centeredSlide: false,
+			},
+		}
     })
 
     const miniSlider = new Swiper('.mini-slider__slider', {

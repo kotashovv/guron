@@ -66,6 +66,7 @@
     &__slide {
         filter: grayscale(1);
         transition: .35s ease;
+        text-align: center;
         &:hover {
             filter: grayscale(0);
         }
