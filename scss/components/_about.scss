@@ -1,0 +1,106 @@
+.about {
+    padding: 40px 0;
+    box-sizing: border-box;
+    // .about__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    // .about__img
+
+    &__img {
+        max-width: 510px;
+        width: 45%;
+        box-sizing: border-box;
+        margin-right: auto;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .about__text
+
+    &__text {
+        width: 55%;
+        box-sizing: border-box;
+        margin-left: 30px;
+        max-width: 650px;
+        h4 {
+            font-family: $font2;
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 1.2;
+            color: $title;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        p {
+            display: block;
+            margin: 0;
+            line-height: 1.3;
+            color: $text;
+            font-size: 16px;
+            line-height: 1.3;
+            margin-bottom: 50px;
+        }
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 205px;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .about {
+        &__img {
+            width: 35%;
+        }
+        &__text {
+            width: 65%;
+            h4 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .about {
+        &__img {
+            display: none;
+        }
+        &__text {
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: none;
+            h4 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            button {
+                margin: 0 auto;
+            }
+            .about__for-img  {
+                max-width: 240px;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 0 auto 20px;
+                img {
+                    max-width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

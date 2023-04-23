@@ -1,0 +1,113 @@
+.mini-slider {
+    .container {
+        max-width: 1390px;
+        position: relative;
+        .mini-slider__navigation {
+            button {
+                z-index: 10;
+                border: none;
+                padding: 5px;
+                box-sizing: border-box;
+                cursor: pointer;
+                background-color: transparent;
+                &:last-child {
+                    transform: rotate(180deg);
+                }
+                &.swiper-button-disabled {
+                    opacity: .5;
+                }
+                img {
+                    max-width: 100%;
+                    display: block;
+                }
+                &.prev-btn {
+                    position: absolute;
+                    left: 0;
+                    top: 240px;
+                }
+                &.next-btn {
+                    position: absolute;
+                    right: 0;
+                    top: 240px;
+                }
+            }
+        }
+    }
+    padding: 40px 0;
+    // .mini-slider__slider
+
+    &__slider {
+        max-width: 1140px;
+        box-sizing: border-box;
+        padding: 30px 10px;
+    }
+    .action {
+        max-width: 1140px;
+        margin: 0 auto;
+        .main-btn {
+            max-width: 160px;
+            width: 100%;
+            margin-left: auto;
+            display: block;
+        }
+    }
+
+    // .mini-slider__wrapper
+
+    &__wrapper {
+      
+    }
+
+    // .mini-slider__slide
+
+    &__slide {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        .name {
+            padding: 15px 10px;
+            box-sizing: border-box;
+            span {
+                display: block;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 1.3;
+                color: $title;
+            }
+        }
+        .img {
+            box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            height: 350px;
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+
+}
+
+@media(max-width:560px) {
+    .mini-slider {
+        .container {
+            .mini-slider__navigation {
+                button.prev-btn, button.next-btn {
+                    top: 240px;
+                }
+            }
+        }
+        &__slide {
+            .img {
+                height: 80vw;
+                max-height: 380px;
+            }
+        }
+    }
+}
