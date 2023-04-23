@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Mont';
+    font-weight: 900;
+    src: url(../assets/fonts/mont_bold.woff) format("Woff"), url(../assets/fonts/mont_bold.ttf) format("TrueType");
+}
+
+$font1: 'Montserrat', sans-serif;
+$font2: "Mont", sans-serif;
+$black: #011520;
+$backcolor: #F5F5F5;
+$red: #AD2B2E;
+
+body {
+    background-color: $backcolor;
+    font-family: $font1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    max-width: 1180px;
+    width: 100%;
+}
+
+.main-btn {
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    background: linear-gradient(90deg, #AD2B2E 0%, #CA1D20 100%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 2px;
+    transition: .35s ease;
+    text-align: center;
+    &:hover {
+        background: linear-gradient(90deg, #AD2B2E 100%, #CA1D20 100%);
+    }
+}
