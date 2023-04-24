@@ -13,10 +13,14 @@ $black: #011520;
 $backcolor: #F5F5F5;
 $red: #AD2B2E;
 $text: #303030;
+$gray: #858585;
 
 body {
     background-color: $backcolor;
     font-family: $font1;
+    background-image: url(assets/imgs/body-decor.png);
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .container {
@@ -75,3 +79,37 @@ body {
         }
     }
 }
+
+.breadcrubms {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        color: inherit;
+        margin-right: 12.5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        &::after {
+            content: '/';
+            display: inline-block;
+            margin-left: 12.5px;
+        }
+    }
+}
+
+.mini-top {
+    padding: 40px 0;
+    box-sizing: border-box;
+    @media(max-width:768px) {
+        padding: 20px 0;
+    }
+}
+
