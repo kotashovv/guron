@@ -2796,6 +2796,331 @@ body {
   }
 }
 
+.product-page {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 0;
+}
+
+.product__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.product__content {
+  height: auto;
+  max-width: 860px;
+  margin-right: auto;
+  width: 100%;
+}
+
+.product__content .text h4 {
+  font-family: "Mont", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #3D3D3D;
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.product__content .text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #303030;
+  display: block;
+  max-height: 72px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.product__content .text button.more-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #AD2B2E;
+  border-bottom: 1px solid #AD2B2E;
+  border-style: dotted;
+  background-color: transparent;
+}
+
+.product__content .product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__content .product-card .img {
+  max-width: 460px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__content .details h1 {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Mont", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  color: #3D3D3D;
+}
+
+.product__content .details h1 + span {
+  font-weight: 300;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  opacity: .5;
+  margin-bottom: 25px;
+}
+
+.product__content .details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.product__content .details ul p {
+  font-family: "Mont", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0;
+  display: block;
+  color: #3D3D3D;
+  margin-bottom: 18px;
+}
+
+.product__content .details ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 8px;
+}
+
+.product__content .details ul li span:first-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #303030;
+  display: block;
+  opacity: .5;
+  max-width: 160px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.product__content .details ul li span:last-child {
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: right;
+  color: #303030;
+}
+
+.product__info {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  max-width: 265px;
+  margin-left: 30px;
+  top: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.product__info .price {
+  margin-bottom: 15px;
+}
+
+.product__info .price span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #303030;
+}
+
+.product__info .price h2 {
+  font-family: "Mont", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.3;
+  color: #3D3D3D;
+  display: block;
+  margin: 0;
+}
+
+.product__info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 15px;
+  background: #F5F5F5;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product__info ul > p {
+  font-weight: 800;
+  font-family: "Mont", sans-serif;
+  display: block;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.product__info ul > p a {
+  display: block;
+  font-weight: 700;
+  color: #AD2B2E;
+}
+
+.product__info ul li {
+  margin-bottom: 15px;
+}
+
+.product__info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.product__info ul li p {
+  font-family: "Mont", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #3D3D3D;
+  line-height: 1.3;
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.product__info ul li span {
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.product__info ul li span.map-ico {
+  background-image: url(assets/imgs/icons/map-ico.svg);
+}
+
+.product__info ul li span.phone-ico {
+  background-image: url(assets/imgs/icons/phone-ico.png);
+}
+
+.product-preview {
+  min-width: 55px;
+  margin-right: 10px;
+  height: 500px;
+}
+
+.product-preview__slide {
+  height: 70px;
+  opacity: .5;
+}
+
+.product-preview__slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.product-preview__slide img {
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product-slider {
+  max-width: 400px;
+  margin-right: 30px;
+}
+
+.product-slider__slide {
+  -webkit-transition: .45s ease;
+  -o-transition: .45s ease;
+  transition: .45s ease;
+  opacity: 0;
+}
+
+.product-slider__slide.swiper-slide-active {
+  opacity: 1;
+}
+
+.product-slider__slide img {
+  max-width: 100%;
+}
+
+@media (max-width: 980px) {
+  .product__content {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+  .product__info {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 30px;
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .product__content .product-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__content .product-card .img {
+    margin: 0 0 15px;
+  }
+  .product__content .product-card .details {
+    margin: 0 0 30px;
+  }
+  .product-preview {
+    height: auto;
+  }
+}
+
 .footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

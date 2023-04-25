@@ -59,6 +59,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
         },
        
     });
+
+	const sliderPreview = new Swiper('.product-preview', {
+		direction: 'vertical',
+		slidesPerView: 'auto',
+		spaceBetween: 15,
+	})
+
+	const productSlider = new Swiper('.product-slider', {
+		speed: 500,
+		thumbs: {
+			swiper: sliderPreview
+		  },
+		  breakpoints: {
+		  }
+	})
     
 
     const breakerSlider = new Swiper('.breaker-slider__slider', {
