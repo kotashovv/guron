@@ -1,5 +1,26 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
+	const locBtns = document.querySelectorAll('.loc-tab');
+
+	if (locBtns.length != null) {
+		locItems = document.querySelectorAll('.loc-window');
+		locBtns.forEach(function(item, i) {
+			item.addEventListener('click', (e)=>{
+				if (!e.target.classList.contains('active')) {
+					locBtns.forEach(function(item){
+						item.classList.remove('active');
+					})
+					locItems.forEach(function(item){
+						item.classList.remove('active');
+					})
+					e.target.classList.add('active');
+					locItems[i].classList.add('active');
+				}
+			})
+		})
+		locBtns[0].click();
+	}
+
 	const tabBtns = document.querySelectorAll('.tab-btn');
 
 	if (tabBtns.length != null) {
