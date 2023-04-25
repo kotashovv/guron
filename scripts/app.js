@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 	const locBtns = document.querySelectorAll('.loc-tab');
 
-	if (locBtns.length != null) {
+	if (locBtns.length != 0) {
 		locItems = document.querySelectorAll('.loc-window');
 		locBtns.forEach(function(item, i) {
 			item.addEventListener('click', (e)=>{
