@@ -1,0 +1,214 @@
+.partner-page {
+    box-sizing: border-box;
+    padding: 30px 0 100px;
+    position: relative;
+    background-image: url(assets/imgs/partner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-image: url(assets/imgs/paper-bot.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        z-index: 2;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        max-width: 580px;
+        background-image: url(assets/imgs/man.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        bottom: 0;
+        right: 10%;
+        z-index: 1;
+    }
+    color: #fff;
+    .mini-top {
+        margin-bottom: 40px;
+    }
+    &__text {
+        width: 50%;
+        max-width: 490px;
+        margin: 0;
+        position: relative;
+        z-index: 3;
+        h1 {
+            font-family: $font2;
+            font-weight: 900;
+            font-size: 120px;
+            line-height: 1.2;
+            color: #fff;
+            margin: 0;
+        }
+        h2 {
+            font-family: $font2;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 1.2;
+            color: #fff;
+            display: block;
+            margin: 0 0 20px;
+            
+        }
+        p {
+            font-family: $font1;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #fff;
+            display: block;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        button.main-btn { 
+            max-width: 250px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+@media(max-width:1024px) {
+    .partner-page {
+        .mini-top {
+            padding: 20px 0;
+            margin-bottom: 15px;
+        }
+        padding-bottom: 80px;
+        &::after {
+            width: 35%;
+            right: 5%;
+        }
+        &__text {
+            width: 60%;
+            h1 {
+                font-size: 82px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width:640px) {
+    .partner-page {
+        &::after {
+            display: none;
+        }
+        &__text {
+            max-width: none;
+            width: 100%;
+            h1 {
+                font-size: 64px;
+            }
+        }
+    }
+}
+
+.part-about {
+    padding: 40px 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        right: -5%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url(assets/imgs/indeec.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        z-index: 10;
+        pointer-events: none;
+    }
+    // .part-about__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    // .part-about__img
+
+    &__img {
+        width: 40% ;
+        margin-right: auto;
+        img {
+            display: inline-block;
+            max-width: 100%;
+        }
+    }
+    &__text {
+        margin-left: 30px;
+        width: 50%;
+        h4 {
+            font-family: $font2;
+            font-weight: 800;
+            font-size: 45px;
+            margin: 0;
+            display: block;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.4;
+            margin: 0;
+            display: block;
+            margin-bottom: 40px;
+        }
+        button.main-btn {
+            max-width: 250px;
+        }
+    }
+
+    // .part-about__text
+
+    &__text {
+    }
+}
+
+@media(max-width:1024px) {
+    .part-about {
+        &__body {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__img {
+            max-width: 120px;
+            margin: 0 0 15px;
+        }
+        &__text {
+            max-width: none;
+            width: 100%;
+            margin: 0;
+            h4 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+

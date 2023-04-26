@@ -1,758 +1,740 @@
 <!DOCTYPE html>
 <html lang="ru ">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Guron | Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
+      <!-- шапка старт -->
 
-        <!-- шапка старт -->
-        
-        <header class="header">
-            <div class="row">
-               <div class="container">
-                    <div class="row__wrap">
-                        <div class="city">
-                            <button class="city-btn">Ваш город</button>
-                         </div>
-                         <div class="header__contact">
-                            <a class="mail-ico" href="mailto:info@webestet.ru">
-                                info@webestet.ru
-                            </a>
-                            <a class="phone-ico" href="tel:+79999999999">+7 (999) 999-99-99</a>
-                         </div>
-                    </div>
-               </div>
-           </div> 
-           <div class="row">
-                <div class="container">
-                    <div class="header__body">
-                        <div class="header__logo">
-                            <a href="#">
-                                <img src="assets/imgs/logo.png" alt="">
-                                <img class="mobile-logo" src="assets/imgs/title-mobile.png" alt="">
-                            </a>
-                        </div>
-                        <nav class="header__nav">
-                            <ul>
-                                <li>
-                                    <a class="with-sublist" href="#">
-                                        Каталог
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">О компании</a>
-                                </li>
-                                <li>
-                                    <a href="#">Партнерство</a>
-                                </li>
-                                <li>
-                                    <a href="#">Где купить</a>
-                                </li>
-                                <li>
-                                    <a href="#">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header__action">
-                            <div class="search">
-                                <button class="search-btn">
-                                    <img src="assets/imgs/icons/search-btn.png" alt="">
-                                </button>
-                            </div>
-                            <div class="header__login">
-                                <a class="login-btn" href="#">
-                                    <img src="assets/imgs/icons/login-ic.png" alt="">
-                                    <span>Войти</span>
-                                </a>
-                            </div>
-                            <div class="header__partner">
-                                <a class="main-btn" href="#">Стать партнером</a>
-                            </div>
-                        </div>
-                    </div>
+      <header class="header">
+        <div class="row">
+          <div class="container">
+            <div class="row__wrap">
+              <div class="city">
+                <button class="city-btn">Ваш город</button>
+              </div>
+              <div class="header__contact">
+                <a class="mail-ico" href="mailto:info@webestet.ru">
+                  info@webestet.ru
+                </a>
+                <a class="phone-ico" href="tel:+79999999999"
+                  >+7 (999) 999-99-99</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div class="header__body">
+              <div class="header__logo">
+                <a href="#">
+                  <img src="assets/imgs/logo.png" alt="" />
+                  <img
+                    class="mobile-logo"
+                    src="assets/imgs/title-mobile.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <nav class="header__nav">
+                <ul>
+                  <li>
+                    <a class="with-sublist" href="#"> Каталог </a>
+                    <ul class="sub-list">
+                        <li>
+                            <a href="#">Продукт 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Продукт 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Продукт 3</a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">О компании</a>
+                  </li>
+                  <li>
+                    <a href="#">Партнерство</a>
+                  </li>
+                  <li>
+                    <a href="#">Где купить</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__action">
+                <div class="search">
+                  <button class="search-btn">
+                    <img src="assets/imgs/icons/search-btn.png" alt="" />
+                  </button>
                 </div>
-           </div>
-           <div class="city-popup">
-            <div class="city-popup__wrap">
-                <div class="city-popup__col city-popup__list">
-                    <div class="action">
-                        <button class="close-popup">
-                            <img src="assets/imgs/icons/back.svg" alt=""> Назад
-                        </button>
-                    </div>
-                    <div class="list">
-                        <h5>
-                            Выберите ваш город
-                        </h5>
-                        <ul>
-                            <li>
-                                <a class="active" href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        Москва
-                                    </p>
-                                    <span class="city-popup-count">
-                                        15 магазинов
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="header__login">
+                  <a class="login-btn" href="#">
+                    <img src="assets/imgs/icons/login-ic.png" alt="" />
+                    <span>Войти</span>
+                  </a>
                 </div>
-                <div class="city-popup__col city-popup__form">
-                    <div class="title">
-                        <h5>
-                            Нет вашего города?
-                        </h5>
-                        <p>
-                            Оставьте заявку и мы откроем магазин у вас в городе
-                        </p>
-                    </div>
-                    <div class="form">
-                        <form action="#">
-                            <label>
-                                <input placeholder="Ваше имя" type="text">
-                            </label>
-                            <label>
-                                <input placeholder="Ваша почта или телефон" type="text">
-                            </label>
-                            <label>
-                                <input placeholder="Ваш город" type="text">
-                            </label>
-                            <div class="action">
-                                <button class="main-btn">Отправить заявку</button>
-                            </div>
-                        </form>
-                    </div>
-                  
+                <div class="header__partner">
+                  <a class="main-btn" href="#">Стать партнером</a>
                 </div>
-                
+              </div>
+              <div class="header__btn">
+                <button class="burger-btn"><span></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="city-popup">
+          <div class="city-popup__wrap">
+            <div class="city-popup__col city-popup__list">
+              <div class="action">
+                <button class="close-popup">
+                  <img src="assets/imgs/icons/back.svg" alt="" /> Назад
+                </button>
+              </div>
+              <div class="list">
+                <h5>Выберите ваш город</h5>
+                <ul>
+                  <li>
+                    <a class="active" href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Москва</p>
+                      <span class="city-popup-count"> 15 магазинов </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="city-popup__col city-popup__form">
+              <div class="title">
+                <h5>Нет вашего города?</h5>
+                <p>Оставьте заявку и мы откроем магазин у вас в городе</p>
+              </div>
+              <div class="form">
+                <form action="#">
+                  <label>
+                    <input placeholder="Ваше имя" type="text" />
+                  </label>
+                  <label>
+                    <input placeholder="Ваша почта или телефон" type="text" />
+                  </label>
+                  <label>
+                    <input placeholder="Ваш город" type="text" />
+                  </label>
+                  <div class="action">
+                    <button class="main-btn">Отправить заявку</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu">
+            <div class="mobile-action">
+                <a href="#">
+                    Войти
+                </a>
+                <a href="#">
+                    Стать партнером
+                </a>
+                <form>
+                    <input placeholder="поиск" type="text">
+                    <button class="search-btn"><img src="assets/imgs/icons/search-btn.png" alt=""></button>
+                </form>
+            </div>
+            <ul class="mobile-nav">
+                <li>
+                    <a href="#">
+                        Каталог
+                    </a>
+                    <ul class="sublist">
+                        <li>
+                            <a href="#">Продукт 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Продукт 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Продукт 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        О компании
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Партнерство
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Где купить
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-contact">
+                <a href="mailto:info@webestet.ru">
+                    info@webestet.ru
+                </a>
+                <a href="tel:+79999999999">
+                    +7 999-999-99-99
+                </a>
             </div>
         </div>
-        </header>
-        <!-- шапка конец -->
+      </header>
+      <!-- шапка конец -->
 
-        <main class="main">
-            <section class="hero">
-                <div class="hero__slider swiper">
-                    <div class="swiper-pagination"></div>
-                    <div class="hero__slider-list swiper-wrapper">
-                        <article style="background-image: url(assets/imgs/main-slide.png);" class="hero__slider-slide swiper-slide">
-                            <div class="container">
-                                <div class="text">
-                                    <span class="suptitle">
-                                        Будь частью племени
-                                    </span>
-                                    <h1>
-                                        GURON
-                                    </h1>
-                                    <p>Бренд эксклюзивной одежды для охотников и рыболовов</p>
-                                    <a class="main-btn " href="#">Узнать больше</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article style="background-image: url(assets/imgs/main-slide.png);" class="hero__slider-slide swiper-slide">
-                            <div class="container">
-                                <div class="text">
-                                    <span class="suptitle">
-                                        Будь частью племени
-                                    </span>
-                                    <h1>
-                                        GURON
-                                    </h1>
-                                    <p>Бренд эксклюзивной одежды для охотников и рыболовов</p>
-                                    <a class="main-btn " href="#">Узнать больше</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article style="background-image: url(assets/imgs/main-slide.png);" class="hero__slider-slide swiper-slide">
-                            <div class="container">
-                                <div class="text">
-                                    <span class="suptitle">
-                                        Будь частью племени
-                                    </span>
-                                    <h1>
-                                        GURON
-                                    </h1>
-                                    <p>Бренд эксклюзивной одежды для охотников и рыболовов</p>
-                                    <a class="main-btn " href="#">Узнать больше</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section class="collection">
+      <main class="main">
+        <section class="hero">
+          <div class="hero__slider swiper">
+            <div class="swiper-pagination"></div>
+            <div class="hero__slider-list swiper-wrapper">
+              <article
+                style="background-image: url(assets/imgs/main-slide.png)"
+                class="hero__slider-slide swiper-slide"
+              >
                 <div class="container">
-                    <div class="cards">
-                        <a class="card" href="#">
-                            <img src="assets/imgs/c1.png" alt="">
-                            <span>
-                                Коллекция
-                            </span>
-                            <p>
-                                Лето
-                            </p>
-                        </a>
-                        <a class="card" href="#">
-                            <img src="assets/imgs/c2.png" alt="">
-                            <span>
-                                Коллекция
-                            </span>
-                            <p>
-                                Лето
-                            </p>
-                        </a>
-                        <a class="card" href="#">
-                            <img src="assets/imgs/c3.png" alt="">
-                            <span>
-                                Коллекция
-                            </span>
-                            <p>
-                                Лето
-                            </p>
-                        </a>
-                        <a class="card" href="#">
-                            <img src="assets/imgs/c4.png" alt="">
-                            <span>
-                                Коллекция
-                            </span>
-                            <p>
-                                Лето
-                            </p>
-                        </a>
-                        <a class="card" href="#">
-                            <img src="assets/imgs/c5.png" alt="">
-                            <span>
-                                Коллекция
-                            </span>
-                            <p>
-                                Лето
-                            </p>
-                        </a>
-                        <a class="card" href="#">
-                            <p>
-                                Все категории
-                            </p>
-                        </a>
-                    </div>
+                  <div class="text">
+                    <span class="suptitle"> Будь частью племени </span>
+                    <h1>GURON</h1>
+                    <p>Бренд эксклюзивной одежды для охотников и рыболовов</p>
+                    <a class="main-btn" href="#">Узнать больше</a>
+                  </div>
                 </div>
-            </section>
-            <section class="mini-slider">
+              </article>
+              <article
+                style="background-image: url(assets/imgs/main-slide.png)"
+                class="hero__slider-slide swiper-slide"
+              >
                 <div class="container">
-                    <div class="mini-slider__navigation">
-                        <button class="prev-btn"><img src="assets/imgs/icons/arriw.svg" alt=""></button>
-                        <button class="next-btn"><img src="assets/imgs/icons/arriw.svg" alt=""></button>
-                    </div>
-                    <div class="section-title">
-                        <h3 class="title">
-                            Лидеры продаж сезона
-                        </h3>
-                    </div>
-                    <div class="mini-slider__slider swiper">
-                        <div class="mini-slider__wrapper swiper-wrapper">
-                            <a class="mini-slider__slide  swiper-slide" href="#">
-                                <div class="img">
-                                    <img src="assets/imgs/m1.png" alt="">
-                                </div>
-                                <div class="name">
-                                    <span>
-                                        Костюм демисезонный Guron Geronimo
-                                    </span>
-                                </div>
-                            </a>    
-                            <a class="mini-slider__slide  swiper-slide" href="#">
-                                <div class="img">
-                                    <img src="assets/imgs/m1.png" alt="">
-                                </div>
-                                <div class="name">
-                                    <span>
-                                        Костюм демисезонный Guron Geronimo
-                                    </span>
-                                </div>
-                            </a>    
-                            <a class="mini-slider__slide  swiper-slide" href="#">
-                                <div class="img">
-                                    <img src="assets/imgs/m1.png" alt="">
-                                </div>
-                                <div class="name">
-                                    <span>
-                                        Костюм демисезонный Guron Geronimo
-                                    </span>
-                                </div>
-                            </a>    
-                            <a class="mini-slider__slide  swiper-slide" href="#">
-                                <div class="img">
-                                    <img src="assets/imgs/m1.png" alt="">
-                                </div>
-                                <div class="name">
-                                    <span>
-                                        Костюм демисезонный Guron Geronimo
-                                    </span>
-                                </div>
-                            </a>    
-                            <a class="mini-slider__slide  swiper-slide" href="#">
-                                <div class="img">
-                                    <img src="assets/imgs/m1.png" alt="">
-                                </div>
-                                <div class="name">
-                                    <span>
-                                        Костюм демисезонный Guron Geronimo
-                                    </span>
-                                </div>
-                            </a>    
-                        </div>
-                    </div>
-                    <div class="action">
-                        <a class="main-btn" href="#">Все товары</a>
-                    </div>
+                  <div class="text">
+                    <span class="suptitle"> Будь частью племени </span>
+                    <h1>GURON</h1>
+                    <p>Бренд эксклюзивной одежды для охотников и рыболовов</p>
+                    <a class="main-btn" href="#">Узнать больше</a>
+                  </div>
                 </div>
-            </section>
-            <section class="breaker-slider">
+              </article>
+              <article
+                style="background-image: url(assets/imgs/main-slide.png)"
+                class="hero__slider-slide swiper-slide"
+              >
                 <div class="container">
-                    <div class="breaker-slider__title section-title">
-                        <h3 class="title">
-                            Нам доверяют
-                        </h3>
-                    </div>
+                  <div class="text">
+                    <span class="suptitle"> Будь частью племени </span>
+                    <h1>GURON</h1>
+                    <p>Бренд эксклюзивной одежды для охотников и рыболовов</p>
+                    <a class="main-btn" href="#">Узнать больше</a>
+                  </div>
                 </div>
-                <div class="breaker-slider__slider-wrap">
-                    <div class="container">
-                        <div class="navigation">
-                            <button class="prev-slide"><img src="assets/imgs/icons/arriw.svg" alt=""></button>
-                            <button class="next-slide"><img src="assets/imgs/icons/arriw.svg" alt=""></button>
-                        </div>
-                        <div class="breaker-slider__slider swiper">
-                            <div class="breaker-slider__slider-list swiper-wrapper">
-                                <article class="breaker-slider__slide swiper-slide">
-                                    <img src="assets/imgs/b1.png" alt="">
-                                </article>
-                                <article class="breaker-slider__slide swiper-slide">
-                                    <img src="assets/imgs/b2.png" alt="">
-                                </article>
-                                <article class="breaker-slider__slide swiper-slide">
-                                    <img src="assets/imgs/b3.png" alt="">
-                                </article>
-                                <article class="breaker-slider__slide swiper-slide">
-                                    <img src="assets/imgs/b4.png" alt="">
-                                </article>
-                                <article class="breaker-slider__slide swiper-slide">
-                                    <img src="assets/imgs/b5.png" alt="">
-                                </article>
-                                <article class="breaker-slider__slide swiper-slide">
-                                    <img src="assets/imgs/b6.png" alt="">
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="offer">
-                <div class="container">
-                    <div class="offer__text">
-                        <h4>
-                            Станьте частью племени
-                        </h4>
-                        <p>
-                            Выгодные предложения для парнеров, большой модельный ряд и многое другое
-                        </p>
-                    </div>
-                    <div class="action">
-                        <button class="main-btn">Стать партнером</button>
-                        <button class="main-btn trans">Узнать подробнее</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about">
-                <div class="container">
-                    <div class="about__body">
-                        <div class="about__img">
-                            <img data-da=".about__for-img,768,1" src="assets/imgs/about.png" alt="">
-                        </div>
-                        <div class="about__text">
-                            <h4>
-                                О компании  «GURON»
-                            </h4>
-                            <div class="about__for-img">
-
-                            </div>
-                            <p>
-                                Могущественное племя гуронов славилось своими знаниями в охоте, рыболовстве и пушном промысле. Гуроны были искусными маскировщиками, от которых не укрывалась ни одна добыча, а вести войны против племени, состоящего из пяти крупных общин мало кто осмеливался. Их территория простиралась на многие километры, а навыки гуронов были известны далеко за пределами племени.
-                                <br><br>
-                                Быть гуроном в современном мире - значит источать силу и выносливость. Настоящего гурона отличает стойкость духа и уверенность в пути даже на неизведанных тропах. Природная ловкость, единение с природой и опыт поколений - качества истинного сына племени. Мы наследуем древние индейские традиции и заботимся о том, чтобы продукция ТМ «Guron» отвечала этим принципам. Надевая нашу одежду на охоту или рыбалку, можете быть уверены, что дух индейского воина-охотника, прославленного гурона, сопровождает вас в дальнейшем пути.
-                            </p>
-                            <button class="main-btn">
-                                Узнать подробнее
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cut">
-                <div class="container">
-                    <div class="cut__body">
-                        <article class="cut__item">
-                            <span class="title">
-                                Производство полного цикла
-                            </span>
-                            <span class="span">
-                                Короткое описание
-                            </span>
-                        </article>
-                        <article class="cut__item">
-                            <span class="title">
-                                Широкий модельный ряд
-                            </span>
-                            <span class="span">
-                                Короткое описание
-                            </span>
-                        </article>
-                        <article class="cut__item">
-                            <span class="title">
-                                Уникальный ассортимент
-                            </span>
-                            <span class="span">
-                                Короткое описание
-                            </span>
-                        </article>
-                        <article class="cut__item">
-                            <span class="title">
-                                Оперативный сбор заказа
-                            </span>
-                            <span class="span">
-                                Короткое описание
-                            </span>
-                        </article>
-                        <article class="cut__item">
-                            <span class="title">
-                                Гарантия качества
-                            </span>
-                            <span class="span">
-                                Короткое описание
-                            </span>
-                        </article>
-                        <article class="cut__item">
-                            <span class="title">
-                                Бесплатная доставка
-                            </span>
-                            <span class="span">
-                                Короткое описание
-                            </span>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="news">
-                <div class="container">
-                    <div class="news__title section-title">
-                        <h4 class="title">Новости и блог</h4>
-                    </div>
-                    <div class="news__body">
-                        <a class="news__item" href="#">
-                            <div class="img">
-                                <img src="assets/imgs/n1.png" alt="">
-                            </div>
-                            <div class="name">
-                                <p>
-                                    7 главных требований одежды 
-                                    для охоты и рыбалки
-                                </p>
-                                <span>
-                                    При производстве одежды для охоты используются качественные современные материалы, имеющие повышенные эксплуатационные характеристики. Неудачно выбранная одежда может испортить охоту, а также привести к различным заболеваниям.
-                                </span>
-                            </div>
-                        </a>
-                        <a class="news__item" href="#">
-                            <div class="img">
-                                <img src="assets/imgs/n1.png" alt="">
-                            </div>
-                            <div class="name">
-                                <p>
-                                    7 главных требований одежды 
-                                    для охоты и рыбалки
-                                </p>
-                                <span>
-                                    При производстве одежды для охоты используются качественные современные материалы, имеющие повышенные эксплуатационные характеристики. Неудачно выбранная одежда может испортить охоту, а также привести к различным заболеваниям.
-                                </span>
-                            </div>
-                        </a>
-                        <a class="news__item" href="#">
-                            <div class="img">
-                                <img src="assets/imgs/n1.png" alt="">
-                            </div>
-                            <div class="name">
-                                <p>
-                                    7 главных требований одежды 
-                                    для охоты и рыбалки
-                                </p>
-                                <span>
-                                    При производстве одежды для охоты используются качественные современные материалы, имеющие повышенные эксплуатационные характеристики. Неудачно выбранная одежда может испортить охоту, а также привести к различным заболеваниям.
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="action">
-                        <a class="main-btn" href="#">Все новости</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="subs">
-                <div class="container">
-                    <div class="subs__body">
-                        <div class="subs__text">
-                            <h4>
-                                Узнавайте первым 
-                                о новинках и акциях 
-                            </h4>
-                        </div>
-                        <div class="subs__form">
-                            <form action="#">
-                                <label>
-                                    <input name="user-name" placeholder="Ваше имя" type="text">
-                                </label>
-                                <label>
-                                    <input name="user-email" placeholder="Ваше почта" type="text">
-                                </label>
-                                <div class="action">
-                                    <button type="submit" class="main-btn">Подписаться</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__body">
-                    <div class="footer__col footer__title">
-                        <div class="title">
-                            <a href="#">
-                                GURON
-                            </a>
-                            <p>
-                                (РЫБА) Добро пожаловать в GURON — интернет-магазин одежды и аксессуаров 
-                                для похода, рыбалки, охоты
-                            </p>
-                        </div>
-                        <div class="copy">
-                            <a href="#">
-                                Политика конфиденциальности
-                            </a>
-                            <span>
-                                Все права защищены 2023
-                            </span>
-                        </div>
-                    </div>
-                    <div class="footer__col footer__nav">
-                        <ul>
-                            <a href="#">
-                                Каталог
-                            </a>
-                            <li>
-                                <a href="#">Походы </a>
-                            </li>
-                            <li>
-                                <a href="#">Велопоходы </a>
-                            </li>
-                            <li>
-                                <a href="#">Оздоровительный </a>
-                            </li>
-                            <li>
-                                <a href="#">Лыжный </a>
-                            </li>
-                            <li>
-                                <a href="#">Походы  </a>
-                            </li>
-                            <li>
-                                <a href="#">Альпинизм </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <a href="#">
-                                Информация
-                            </a>
-                            <li>
-                                <a href="#">О Компании </a>
-                            </li>
-                            <li>
-                                <a href="#">Где купить </a>
-                            </li>
-                            <li>
-                                <a href="#">Партнерство </a>
-                            </li>
-                            <li>
-                                <a href="#">Новости</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__col footer__contact">
-                        <p>
-                            контакты
-                        </p>
-                        <div class="contacts">
-                            <a class="phone-ico" href="#">+7 (999) 999-99-99</a>
-                            <a class="mail-ico" href="#">info@webestet.ru</a>
-                        </div>
-                        <div class="email">
-                            <p>
-                                Оставайтесь на связи
-                            </p>
-                            <form action="#">
-                                <input placeholder="Ваша почта" type="email">
-                                <button type="submit"></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+              </article>
             </div>
-        </footer>
+          </div>
+        </section>
+        <section class="collection">
+          <div class="container">
+            <div class="cards">
+              <a class="card" href="#">
+                <img src="assets/imgs/c1.png" alt="" />
+                <span> Коллекция </span>
+                <p>Лето</p>
+              </a>
+              <a class="card" href="#">
+                <img src="assets/imgs/c2.png" alt="" />
+                <span> Коллекция </span>
+                <p>Лето</p>
+              </a>
+              <a class="card" href="#">
+                <img src="assets/imgs/c3.png" alt="" />
+                <span> Коллекция </span>
+                <p>Лето</p>
+              </a>
+              <a class="card" href="#">
+                <img src="assets/imgs/c4.png" alt="" />
+                <span> Коллекция </span>
+                <p>Лето</p>
+              </a>
+              <a class="card" href="#">
+                <img src="assets/imgs/c5.png" alt="" />
+                <span> Коллекция </span>
+                <p>Лето</p>
+              </a>
+              <a class="card" href="#">
+                <p>Все категории</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="mini-slider">
+          <div class="container">
+            <div class="mini-slider__navigation">
+              <button class="prev-btn">
+                <img src="assets/imgs/icons/arriw.svg" alt="" />
+              </button>
+              <button class="next-btn">
+                <img src="assets/imgs/icons/arriw.svg" alt="" />
+              </button>
+            </div>
+            <div class="section-title">
+              <h3 class="title">Лидеры продаж сезона</h3>
+            </div>
+            <div class="mini-slider__slider swiper">
+              <div class="mini-slider__wrapper swiper-wrapper">
+                <a class="mini-slider__slide swiper-slide" href="#">
+                  <div class="img">
+                    <img src="assets/imgs/m1.png" alt="" />
+                  </div>
+                  <div class="name">
+                    <span> Костюм демисезонный Guron Geronimo </span>
+                  </div>
+                </a>
+                <a class="mini-slider__slide swiper-slide" href="#">
+                  <div class="img">
+                    <img src="assets/imgs/m1.png" alt="" />
+                  </div>
+                  <div class="name">
+                    <span> Костюм демисезонный Guron Geronimo </span>
+                  </div>
+                </a>
+                <a class="mini-slider__slide swiper-slide" href="#">
+                  <div class="img">
+                    <img src="assets/imgs/m1.png" alt="" />
+                  </div>
+                  <div class="name">
+                    <span> Костюм демисезонный Guron Geronimo </span>
+                  </div>
+                </a>
+                <a class="mini-slider__slide swiper-slide" href="#">
+                  <div class="img">
+                    <img src="assets/imgs/m1.png" alt="" />
+                  </div>
+                  <div class="name">
+                    <span> Костюм демисезонный Guron Geronimo </span>
+                  </div>
+                </a>
+                <a class="mini-slider__slide swiper-slide" href="#">
+                  <div class="img">
+                    <img src="assets/imgs/m1.png" alt="" />
+                  </div>
+                  <div class="name">
+                    <span> Костюм демисезонный Guron Geronimo </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="action">
+              <a class="main-btn" href="#">Все товары</a>
+            </div>
+          </div>
+        </section>
+        <section class="breaker-slider">
+          <div class="container">
+            <div class="breaker-slider__title section-title">
+              <h3 class="title">Нам доверяют</h3>
+            </div>
+          </div>
+          <div class="breaker-slider__slider-wrap">
+            <div class="container">
+              <div class="navigation">
+                <button class="prev-slide">
+                  <img src="assets/imgs/icons/arriw.svg" alt="" />
+                </button>
+                <button class="next-slide">
+                  <img src="assets/imgs/icons/arriw.svg" alt="" />
+                </button>
+              </div>
+              <div class="breaker-slider__slider swiper">
+                <div class="breaker-slider__slider-list swiper-wrapper">
+                  <article class="breaker-slider__slide swiper-slide">
+                    <img src="assets/imgs/b1.png" alt="" />
+                  </article>
+                  <article class="breaker-slider__slide swiper-slide">
+                    <img src="assets/imgs/b2.png" alt="" />
+                  </article>
+                  <article class="breaker-slider__slide swiper-slide">
+                    <img src="assets/imgs/b3.png" alt="" />
+                  </article>
+                  <article class="breaker-slider__slide swiper-slide">
+                    <img src="assets/imgs/b4.png" alt="" />
+                  </article>
+                  <article class="breaker-slider__slide swiper-slide">
+                    <img src="assets/imgs/b5.png" alt="" />
+                  </article>
+                  <article class="breaker-slider__slide swiper-slide">
+                    <img src="assets/imgs/b6.png" alt="" />
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="offer">
+          <div class="container">
+            <div class="offer__text">
+              <h4>Станьте частью племени</h4>
+              <p>
+                Выгодные предложения для парнеров, большой модельный ряд и
+                многое другое
+              </p>
+            </div>
+            <div class="action">
+              <button class="main-btn">Стать партнером</button>
+              <button class="main-btn trans">Узнать подробнее</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="about__body">
+              <div class="about__img">
+                <img
+                  data-da=".about__for-img,768,1"
+                  src="assets/imgs/about.png"
+                  alt=""
+                />
+              </div>
+              <div class="about__text">
+                <h4>О компании «GURON»</h4>
+                <div class="about__for-img"></div>
+                <p>
+                  Могущественное племя гуронов славилось своими знаниями в
+                  охоте, рыболовстве и пушном промысле. Гуроны были искусными
+                  маскировщиками, от которых не укрывалась ни одна добыча, а
+                  вести войны против племени, состоящего из пяти крупных общин
+                  мало кто осмеливался. Их территория простиралась на многие
+                  километры, а навыки гуронов были известны далеко за пределами
+                  племени.
+                  <br /><br />
+                  Быть гуроном в современном мире - значит источать силу и
+                  выносливость. Настоящего гурона отличает стойкость духа и
+                  уверенность в пути даже на неизведанных тропах. Природная
+                  ловкость, единение с природой и опыт поколений - качества
+                  истинного сына племени. Мы наследуем древние индейские
+                  традиции и заботимся о том, чтобы продукция ТМ «Guron»
+                  отвечала этим принципам. Надевая нашу одежду на охоту или
+                  рыбалку, можете быть уверены, что дух индейского
+                  воина-охотника, прославленного гурона, сопровождает вас в
+                  дальнейшем пути.
+                </p>
+                <button class="main-btn">Узнать подробнее</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cut">
+          <div class="container">
+            <div class="cut__body">
+              <article class="cut__item">
+                <span class="title"> Производство полного цикла </span>
+                <span class="span"> Короткое описание </span>
+              </article>
+              <article class="cut__item">
+                <span class="title"> Широкий модельный ряд </span>
+                <span class="span"> Короткое описание </span>
+              </article>
+              <article class="cut__item">
+                <span class="title"> Уникальный ассортимент </span>
+                <span class="span"> Короткое описание </span>
+              </article>
+              <article class="cut__item">
+                <span class="title"> Оперативный сбор заказа </span>
+                <span class="span"> Короткое описание </span>
+              </article>
+              <article class="cut__item">
+                <span class="title"> Гарантия качества </span>
+                <span class="span"> Короткое описание </span>
+              </article>
+              <article class="cut__item">
+                <span class="title"> Бесплатная доставка </span>
+                <span class="span"> Короткое описание </span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <div class="news__title section-title">
+              <h4 class="title">Новости и блог</h4>
+            </div>
+            <div class="news__body">
+              <a class="news__item" href="#">
+                <div class="img">
+                  <img src="assets/imgs/n1.png" alt="" />
+                </div>
+                <div class="name">
+                  <p>7 главных требований одежды для охоты и рыбалки</p>
+                  <span>
+                    При производстве одежды для охоты используются качественные
+                    современные материалы, имеющие повышенные эксплуатационные
+                    характеристики. Неудачно выбранная одежда может испортить
+                    охоту, а также привести к различным заболеваниям.
+                  </span>
+                </div>
+              </a>
+              <a class="news__item" href="#">
+                <div class="img">
+                  <img src="assets/imgs/n1.png" alt="" />
+                </div>
+                <div class="name">
+                  <p>7 главных требований одежды для охоты и рыбалки</p>
+                  <span>
+                    При производстве одежды для охоты используются качественные
+                    современные материалы, имеющие повышенные эксплуатационные
+                    характеристики. Неудачно выбранная одежда может испортить
+                    охоту, а также привести к различным заболеваниям.
+                  </span>
+                </div>
+              </a>
+              <a class="news__item" href="#">
+                <div class="img">
+                  <img src="assets/imgs/n1.png" alt="" />
+                </div>
+                <div class="name">
+                  <p>7 главных требований одежды для охоты и рыбалки</p>
+                  <span>
+                    При производстве одежды для охоты используются качественные
+                    современные материалы, имеющие повышенные эксплуатационные
+                    характеристики. Неудачно выбранная одежда может испортить
+                    охоту, а также привести к различным заболеваниям.
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="action">
+              <a class="main-btn" href="#">Все новости</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="subs">
+          <div class="container">
+            <div class="subs__body">
+              <div class="subs__text">
+                <h4>Узнавайте первым о новинках и акциях</h4>
+              </div>
+              <div class="subs__form">
+                <form action="#">
+                  <label>
+                    <input
+                      name="user-name"
+                      placeholder="Ваше имя"
+                      type="text"
+                    />
+                  </label>
+                  <label>
+                    <input
+                      name="user-email"
+                      placeholder="Ваше почта"
+                      type="text"
+                    />
+                  </label>
+                  <div class="action">
+                    <button type="submit" class="main-btn">Подписаться</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__col footer__title">
+              <div class="title">
+                <a href="#"> GURON </a>
+                <p>
+                  (РЫБА) Добро пожаловать в GURON — интернет-магазин одежды и
+                  аксессуаров для похода, рыбалки, охоты
+                </p>
+              </div>
+              <div class="copy">
+                <a href="#"> Политика конфиденциальности </a>
+                <span> Все права защищены 2023 </span>
+              </div>
+            </div>
+            <div class="footer__col footer__nav">
+              <ul>
+                <a href="#"> Каталог </a>
+                <li>
+                  <a href="#">Походы </a>
+                </li>
+                <li>
+                  <a href="#">Велопоходы </a>
+                </li>
+                <li>
+                  <a href="#">Оздоровительный </a>
+                </li>
+                <li>
+                  <a href="#">Лыжный </a>
+                </li>
+                <li>
+                  <a href="#">Походы </a>
+                </li>
+                <li>
+                  <a href="#">Альпинизм </a>
+                </li>
+              </ul>
+              <ul>
+                <a href="#"> Информация </a>
+                <li>
+                  <a href="#">О Компании </a>
+                </li>
+                <li>
+                  <a href="#">Где купить </a>
+                </li>
+                <li>
+                  <a href="#">Партнерство </a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Контакты </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col footer__contact">
+              <p>контакты</p>
+              <div class="contacts">
+                <a class="phone-ico" href="#">+7 (999) 999-99-99</a>
+                <a class="mail-ico" href="#">info@webestet.ru</a>
+              </div>
+              <div class="email">
+                <p>Оставайтесь на связи</p>
+                <form action="#">
+                  <input placeholder="Ваша почта" type="email" />
+                  <button type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="notice">
+        <div class="notice-item">
+            <button class="close-notice">
+            </button>
+            <div class="text">
+                <span>
+                    Праздничные дни 
+                    <span>31.12-10.01</span>
+                </span>
+                <p>
+                    К сожалению все наши менеджеры сейчас дерутся за право ответить на ваши вопросы. Бои продлятся <span>до 10 января</span> и победитель позвонит вам
+                    <br><br> Но в это время вы можете ознакомится с ассортиментом нашего магазина
+                </p>
+                <a href="#" class="main-btn">Перейти в магазин </a>
+            </div>
+            <div class="img">
+                <img src="assets/imgs/notice.png" alt="">
+            </div>
+        </div>
+       
+      </div>
     </div>
     <script src="assets/libs/swiper-bundle.min.js"></script>
     <script src="scripts/app.js"></script>
-</body>
+  </body>
 </html>
